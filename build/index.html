@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>    
+    
+    <meta charset="utf-8">
+    <title>MuSIM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+      <div id="elm"></div>
+      <script>
+      var app = Elm.Main.init({
+        node: document.getElementById('elm')
+      });
+      app.ports.play.subscribe(function (data) {
+          var x = document.getElementById("pulse-beep");
+          x.play();
+      })
+      </script>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #d6d6d6;
+    text-align: center;
+    padding: 0px 0px;
+}
+ 
+
+p {
+    color: red;
+    margin: 0px;
+}
+
+hr {
+    color : rgb(0, 63, 134);
+}
+
+button {
+    color : rgb(0, 63, 134);
+    background-color : lightgray;
+}
+
+button:disabled, button[disabled]{
+    background-color : gray;
+}
+.circulation_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.result_box {
+    display: block;
+    background-color: black;
+    font-size: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30mm;
+    outline: 2px solid gray; 
+    margin-bottom: 5px;
+    padding: 0 6px;
+}
+
+.label {
+    color: white;
+    text-align: left;
+}
+
+.value {
+    color: orange;
+    text-align: right;
+    font-size: 18pt;
+}
+
+
+.units {
+    color: white;
+    text-align: right;
+    font-size: 12pt;
+    margin-left: 4px;
+}
+
+#header {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color : rgb(0, 63, 134)
+}
+
+#MuSIM {
+    display: flex;
+    color: White;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36pt;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#sim_ui_mode {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ui_mode {
+        color:rgb(180, 180, 180);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        justify-self: end;
+        padding-top: 5px;
+        padding-right: 10px;
+
+}
+
+.active_ui_mode {
+    color: White;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    justify-self: end;
+    padding-top: 5px;
+    padding-right: 10px;
+
+}
+
+#time_control_container {
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    padding-top: 10px;
+}
+
+#running_time {
+    display: flex;
+    color:  rgb(0, 63, 134);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36pt;
+    align-items: center;
+    justify-content: left;
+}
+
+#speedUp_container{
+    display: trid;
+    grid-template-rows: repeat(3, 25px);
+}
+
+#speedup{
+    display: flex;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    align-items: center;
+    justify-content: center;
+}
+
+#sim_run_state{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr
+}
+
+#run, #pause, #stop {
+    width: 50px;
+    font-size: 13pt;
+    color: rgb(0, 63, 134);
+    margin-left: 10px;
+    height: auto;
+}
+
+.slide_wrapper {
+    display: inline-block;
+    width: 20px;
+    height: 150px;
+    padding: 0;
+}
+
+.slide_wrapper input {
+    width: 150px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg);
+}
+
+#sliders_and_values {
+    display: grid;
+    grid-template-columns: 30px 30px;
+    align-content: left;
+}
+
+/* .slider {
+    appearance: none;
+    -webkit-appearance: none;
+    background: orange;
+    outline:none;
+    opacity: 0.4;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+}
+*/
+.slider:hover {
+    opacity: 1;
+} 
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    background: black;
+    cursor:pointer;
+}
+
+.slider::-moz-range-thumb {
+    background: black;
+    cursor:pointer;
+}
+
+
+#hs_slider {
+    grid-column: 1;
+}
+
+#hs_slider_value {
+    grid-column: 2;
+}
+
+#audio {
+    background : red;
+}
